@@ -17,13 +17,13 @@ export function RegisterReports() {
     { id: 1, employeeId: "EMP001", name: "John Doe", email: "john.doe@example.com", registeredDate: "2024-03-15", cardNumber: "4532-7843-9284-1234" },
     { id: 2, employeeId: "EMP002", name: "Jane Smith", email: "jane.smith@example.com", registeredDate: "2024-03-14", cardNumber: "4532-8932-7621-5678" },
     { id: 3, employeeId: "EMP003", name: "Robert Johnson", email: "robert.j@example.com", registeredDate: "2024-03-14", cardNumber: "4532-1234-5678-9012" },
-    { id: 4, employeeId: "EMP004", name: "Emily Davis", email: "emily.d@example.com", registeredDate: "2024-03-13", cardNumber: "4532-9012-3456-3456" },
-    { id: 5, employeeId: "EMP005", name: "Michael Wilson", email: "michael.w@example.com", registeredDate: "2024-03-13", cardNumber: "4532-5678-9012-7890" },
-    { id: 6, employeeId: "EMP006", name: "Sarah Brown", email: "sarah.b@example.com", registeredDate: "2024-03-12", cardNumber: "4532-3456-7890-2345" },
-    { id: 7, employeeId: "EMP007", name: "David Miller", email: "david.m@example.com", registeredDate: "2024-03-12", cardNumber: "4532-7890-1234-6789" },
-    { id: 8, employeeId: "EMP008", name: "Lisa Anderson", email: "lisa.a@example.com", registeredDate: "2024-03-11", cardNumber: "4532-2345-6789-0123" },
-    { id: 9, employeeId: "EMP009", name: "James Taylor", email: "james.t@example.com", registeredDate: "2024-03-11", cardNumber: "4532-6789-0123-4567" },
-    { id: 10, employeeId: "EMP010", name: "Emma White", email: "emma.w@example.com", registeredDate: "2024-03-10", cardNumber: "4532-0123-4567-8901" },
+    // { id: 4, employeeId: "EMP004", name: "Emily Davis", email: "emily.d@example.com", registeredDate: "2024-03-13", cardNumber: "4532-9012-3456-3456" },
+    // { id: 5, employeeId: "EMP005", name: "Michael Wilson", email: "michael.w@example.com", registeredDate: "2024-03-13", cardNumber: "4532-5678-9012-7890" },
+    // { id: 6, employeeId: "EMP006", name: "Sarah Brown", email: "sarah.b@example.com", registeredDate: "2024-03-12", cardNumber: "4532-3456-7890-2345" },
+    // { id: 7, employeeId: "EMP007", name: "David Miller", email: "david.m@example.com", registeredDate: "2024-03-12", cardNumber: "4532-7890-1234-6789" },
+    // { id: 8, employeeId: "EMP008", name: "Lisa Anderson", email: "lisa.a@example.com", registeredDate: "2024-03-11", cardNumber: "4532-2345-6789-0123" },
+    // { id: 9, employeeId: "EMP009", name: "James Taylor", email: "james.t@example.com", registeredDate: "2024-03-11", cardNumber: "4532-6789-0123-4567" },
+    // { id: 10, employeeId: "EMP010", name: "Emma White", email: "emma.w@example.com", registeredDate: "2024-03-10", cardNumber: "4532-0123-4567-8901" },
   ]);
 
   // Calculate statistics

@@ -16,13 +16,13 @@ export function RegisterCompleted() {
     { id: 1, name: "John Doe", email: "john.doe@example.com", registeredDate: "2024-03-15" },
     { id: 2, name: "Jane Smith", email: "jane.smith@example.com", registeredDate: "2024-03-14" },
     { id: 3, name: "Robert Johnson", email: "robert.j@example.com", registeredDate: "2024-03-14" },
-    { id: 4, name: "Emily Davis", email: "emily.d@example.com", registeredDate: "2024-03-13" },
-    { id: 5, name: "Michael Wilson", email: "michael.w@example.com", registeredDate: "2024-03-13" },
-    { id: 6, name: "Sarah Brown", email: "sarah.b@example.com", registeredDate: "2024-03-12" },
-    { id: 7, name: "David Miller", email: "david.m@example.com", registeredDate: "2024-03-12" },
-    { id: 8, name: "Lisa Anderson", email: "lisa.a@example.com", registeredDate: "2024-03-11" },
-    { id: 9, name: "James Taylor", email: "james.t@example.com", registeredDate: "2024-03-11" },
-    { id: 10, name: "Emma White", email: "emma.w@example.com", registeredDate: "2024-03-10" },
+    // { id: 4, name: "Emily Davis", email: "emily.d@example.com", registeredDate: "2024-03-13" },
+    // { id: 5, name: "Michael Wilson", email: "michael.w@example.com", registeredDate: "2024-03-13" },
+    // { id: 6, name: "Sarah Brown", email: "sarah.b@example.com", registeredDate: "2024-03-12" },
+    // { id: 7, name: "David Miller", email: "david.m@example.com", registeredDate: "2024-03-12" },
+    // { id: 8, name: "Lisa Anderson", email: "lisa.a@example.com", registeredDate: "2024-03-11" },
+    // { id: 9, name: "James Taylor", email: "james.t@example.com", registeredDate: "2024-03-11" },
+    // { id: 10, name: "Emma White", email: "emma.w@example.com", registeredDate: "2024-03-10" },
   ]);
 
   return (

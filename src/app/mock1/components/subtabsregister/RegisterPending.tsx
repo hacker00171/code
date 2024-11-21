@@ -20,13 +20,13 @@ export function RegisterPending() {
     { id: 1, name: "John Doe", email: "john.doe@example.com" },
     { id: 2, name: "Jane Smith", email: "jane.smith@example.com" },
     { id: 3, name: "Robert Johnson", email: "robert.j@example.com" },
-    { id: 4, name: "Emily Davis", email: "emily.d@example.com" },
-    { id: 5, name: "Michael Wilson", email: "michael.w@example.com" },
-    { id: 6, name: "Sarah Brown", email: "sarah.b@example.com" },
-    { id: 7, name: "David Miller", email: "david.m@example.com" },
-    { id: 8, name: "Lisa Anderson", email: "lisa.a@example.com" },
-    { id: 9, name: "James Taylor", email: "james.t@example.com" },
-    { id: 10, name: "Emma White", email: "emma.w@example.com" },
+      // { id: 4, name: "Emily Davis", email: "emily.d@example.com" },
+      // { id: 5, name: "Michael Wilson", email: "michael.w@example.com" },
+      // { id: 6, name: "Sarah Brown", email: "sarah.b@example.com" },
+      // { id: 7, name: "David Miller", email: "david.m@example.com" },
+      // { id: 8, name: "Lisa Anderson", email: "lisa.a@example.com" },
+      // { id: 9, name: "James Taylor", email: "james.t@example.com" },
+      // { id: 10, name: "Emma White", email: "emma.w@example.com" },
   ]);
   const [selectedUser, setSelectedUser] = useState<string>("");
   const [isDialogOpen, setIsDialogOpen] = useState(false)
