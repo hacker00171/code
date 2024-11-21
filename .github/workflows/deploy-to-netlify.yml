@@ -3,7 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - main  # Triggers the workflow when changes are pushed to the main branch
+      - main  # Replace with the branch you want to trigger deployments (e.g., 'main' or 'dev/branch')
 
 jobs:
   deploy:
@@ -11,23 +11,23 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v3  # Checks out the repository
+      uses: actions/checkout@v3  # Check out the repository code
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Specify your Node.js version
+        node-version: '18'  # Specify your Node.js version, e.g., '16', '18', etc.
 
     - name: Install Dependencies
-      run: npm install  # Adjust this if you're using yarn or another package manager
+      run: npm install  # Install dependencies (adjust if you use yarn or pnpm)
 
     - name: Build Project
-      run: npm run build  # Adjust this based on your build command
+      run: npm run build  # Adjust to your project's build command
 
     - name: Deploy to Netlify
-      uses: nwtgck/actions-netlify@v2.0.2
+      uses: chrislennon/netlify-deploy-action@v1  # Alternative action for Netlify deployment
       with:
-        publish-dir: ./dist  # Replace with your build output directory
-        production-deploy: true
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Netlify personal access token
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}        # Netlify site ID
+        BUILD_COMMAND: npm run build                          # Adjust to your project's build command
+        PUBLISH_DIRECTORY: ./dist                             # Replace with your build output directory
