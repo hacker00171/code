@@ -1,0 +1,33 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main  # Triggers the workflow when changes are pushed to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3  # Checks out the repository
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # Specify your Node.js version
+
+    - name: Install Dependencies
+      run: npm install  # Adjust this if you're using yarn or another package manager
+
+    - name: Build Project
+      run: npm run build  # Adjust this based on your build command
+
+    - name: Deploy to Netlify
+      uses: nwtgck/actions-netlify@v2.0.2
+      with:
+        publish-dir: ./dist  # Replace with your build output directory
+        production-deploy: true
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
