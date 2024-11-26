@@ -1,17 +1,11 @@
-// import { redirect } from 'next/navigation'
-
-// export default function Home() {
-//   redirect('/login-page')
-// }
-
 import { Suspense } from 'react'
 import Link from 'next/link'
-import { getUser } from './actions/auth'
-import { RegisterForm } from './components/RegisterForm'
+import { getUser } from '../actions/auth'
+import { LoginForm } from '../components/LoginForm'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 
-export default async function Home() {
+export default async function LoginPage() {
   const user = await getUser()
 
   if (user) {
@@ -19,8 +13,8 @@ export default async function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <Card className="w-[350px]">
           <CardHeader>
-            <CardTitle>Welcome, {user.email}!</CardTitle>
-            <CardDescription>You are logged in.</CardDescription>
+            <CardTitle>Already Logged In</CardTitle>
+            <CardDescription>You are already logged in as {user.email}.</CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/dashboard">
@@ -36,17 +30,17 @@ export default async function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <Card className="w-[350px]">
         <CardHeader>
-          <CardTitle>Register</CardTitle>
-          <CardDescription>Create a new account</CardDescription>
+          <CardTitle>Login</CardTitle>
+          <CardDescription>Enter your credentials to access your account</CardDescription>
         </CardHeader>
         <CardContent>
           <Suspense fallback={<div>Loading...</div>}>
-            <RegisterForm />
+            <LoginForm />
           </Suspense>
         </CardContent>
         <CardFooter className="flex justify-center">
-          <Link href="/login" className="text-sm text-gray-600 hover:underline">
-            Already have an account? Login here
+          <Link href="/" className="text-sm text-gray-600 hover:underline">
+            Don&apos;t have an account? Register here
           </Link>
         </CardFooter>
       </Card>
